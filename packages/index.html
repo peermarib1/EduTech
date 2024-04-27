@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf"><link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf" type="font/ttf"><link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf" type="font/ttf"><link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf" type="font/ttf">
+<style>@font-face {font-weight: 400;font-style: normal;font-family: Urbanist;font-display: swap;src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf)}</style><style>@font-face {font-weight: 500;font-style: normal;font-family: Urbanist;font-display: swap;src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf)}</style><style>@font-face {font-weight: 600;font-style: normal;font-family: Urbanist;font-display: swap;src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf)}</style><style>@font-face {font-weight: 700;font-style: normal;font-family: Urbanist;font-display: swap;src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf)}</style>
+<style>html { font-family: Urbanist, _font_fallback_1707051189101, sans-serif; } @font-face { font-family: _font_fallback_1707051189101; size-adjust: 100.98%; src: local('Arial'); ascent-override: 94.08%; descent-override: 24.76%; line-gap-override: 0.00%; }</style>
+
+    <link rel="stylesheet" href="assets/index.065d7c59.css" /><script type="module">let e=!1;const s=document.querySelector("#navlinks"),l=document.querySelector("#hamburger"),t=document.querySelector("#navLayer"),i=[...s.querySelector("ul").children];function a(){e?(s.classList.add("!visible","!scale-100","!opacity-100","!lg:translate-y-0"),l.classList.add("toggled"),t.classList.add("origin-top","scale-y-100")):(s.classList.remove("!visible","!scale-100","!opacity-100","!lg:translate-y-0"),l.classList.remove("toggled"),t.classList.remove("origin-top","scale-y-100"))}l.addEventListener("click",()=>{e=!e,a()});i.forEach(c=>{c.addEventListener("click",()=>{e=!e,a()})});
+</script>
+    <style>
+
+.max-w-lg {
+    max-width: max-content !important;
+}
+        body{
+
+      
+           margin: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow-wrap: break-word;
+    /* width: 100vw; */
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(19, 19, 40) ! IMPORTANT;
+}
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="astro-ES6RJE63">
+        <nav class="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent astro-ES6RJE63">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+        <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4 astro-ES6RJE63">
+                    <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max astro-ES6RJE63">
+                        <a href="" aria-label="logo" class="flex items-center space-x-2 astro-ES6RJE63">
+                            <div aria-hidden="true" class="flex space-x-1 astro-ES6RJE63">
+                                <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white astro-ES6RJE63"></div>
+                                <div class="h-6 w-2 bg-primary astro-ES6RJE63"></div>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-900 dark:text-white astro-ES6RJE63">GrabMyUniversity</span>
+                        </a>
+    
+                        <div class="relative flex max-h-10 items-center lg:hidden astro-ES6RJE63">
+                            <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 astro-ES6RJE63">
+                                <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300 astro-ES6RJE63"></div>
+                                <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300 astro-ES6RJE63"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden astro-ES6RJE63"></div>
+                    <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none astro-ES6RJE63">
+                        <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0 astro-ES6RJE63">
+                            <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm astro-ES6RJE63">
+                                <li class="astro-ES6RJE63">
+                                            <a href="index.html#features" class="hover:text-primary block transition dark:hover:text-white md:px-4 astro-ES6RJE63">
+                                                <span class="astro-ES6RJE63">Colleges</span>
+                                            </a>
+                                        </li><li class="astro-ES6RJE63">
+                                            <a href="index.html#solution" class="hover:text-primary block transition dark:hover:text-white md:px-4 astro-ES6RJE63">
+                                                <span class="astro-ES6RJE63">Exam</span>
+                                            </a>
+                                        </li><li class="astro-ES6RJE63">
+                                            <a href="index.html#reviews" class="hover:text-primary block transition dark:hover:text-white md:px-4 astro-ES6RJE63">
+                                                <span class="astro-ES6RJE63">Course</span>
+                                            </a>
+                                        </li>
+                                <li class="astro-ES6RJE63">
+                                    <a href="https://tailus.gumroad.com/l/astls-premium" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-ES6RJE63">
+                                        <span class="astro-ES6RJE63">Careers</span>
+                                        <span class="flex rounded-full bg-primary/20 px-1.5 py-0.5 text-xs tracking-wider text-purple-700 dark:bg-white/10 dark:text-orange-300 astro-ES6RJE63"> new</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="mt-12 lg:mt-0 astro-ES6RJE63">
+                            <a href="/services.html" class="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max astro-ES6RJE63">
+                                <span class="relative text-sm font-semibold text-white astro-ES6RJE63">Start Your Journey Today</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+        </nav>
+    </header>
+   <br>
+   
+       <div class="container mx-auto py-12 px-4 lg:px-0">
+        <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white py-4 px-6">
+                <h2 class="text-2xl font-semibold">Package 1: Premium Paid Counselling Package</h2>
+                <p class="text-sm italic">(100% Refundable)*</p>
+            </div>
+            <div class="p-6">
+                <!-- Description -->
+                <p class="text-gray-700">Enhance your chances of admission to maximize with our premium package. Get the benefit of Alert package and Counselling Package along with some exclusive college guidance that will fit your budget. Submit candidate details and choice of colleges to us and stay tension free. A well trained experienced Professional team will take care of everything from the registration of counselling to Choose filling & locking. Everything will be done by the senior team of OM EDUCARE. Also, at the time of Mop-Up round, you will be informed at high priority about vacant seats so that you stand with maximum chances to get admission in the Final round.</p>
+                <hr class="my-6">
+                        <ul class="divide-y divide-gray-200">
+                            <li class="py-2 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M19.707 5.293a1 1 0 00-1.414 0L8 15.586l-4.293-4.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="font-semibold">24x7 Alert for Counselling & Admission related Dates and instructions.</span> Candidate will be informed via SMS, WhatsApp, Voice call, E-mails & one to one Call.
+                            </li>
+                            <li class="py-2 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                    <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                            </li>
+                            <li class="py-2 flex items-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                 <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                             </svg>
+                             <span class="font-semibold"> Exclusive Action Plan for Multiple State Counselling.</span>
+                         </li><li class="py-2 flex items-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                 <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                             </svg>
+                             <span class="font-semibold">Detailed and Authentic information on Admission Procedure.</span>
+                         </li><li class="py-2 flex items-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                 <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                             </svg>
+                             <span class="font-semibold">Get Counselling services for AIQ + Deemed University + Govt. & Private Colleges up to 10 states of your choice (Including your Home State) will be done by our Experts.</span>
+                         </li><li class="py-2 flex items-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                 <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                             </svg>
+                             <span class="font-semibold">Full Refund of Our Charges if candidate doesn’t get admission till last date.</span>
+                         </li><li class="py-2 flex items-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                 <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                             </svg>
+                             <span class="font-semibold"> Score Based Analysis & Suggestions for Best Fit Colleges in your Budget.</span>
+                         </li>
+                        </ul>
+                <!-- Clickable Sections -->
+                <hr class="my-6">
+                <div class="flex flex-wrap justify-center sm:justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('packageCost')">Package Cost</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('modeOfPayment')">Mode of Payment</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('packageValidity')">Package Validity and Additional Discount</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('refund')">Refund</button>
+                </div>
+                
+                <!-- Details Sections -->
+                <div id="packageCost" class="hidden mt-4">
+                    <!-- Package Cost Details -->
+                    <p><b>1. Package Cost (Before Neet Exam 2024)</b></p>
+                    <p>Rs. 1,75,000/– Rs. 1,50,000/- (Inclusive of 18% GST)</p>
+                    <!-- Payment Options -->
+                    <p><b>Payment Options:</b></p>
+                    <ul>
+                        <li>Installment-1: Rs. 75,000/- At the Time of Booking</li>
+                        <li>Installment-2: Rs. 75,000/- Just after Neet Exam</li>
+                    </ul>
+                    <!-- Discount Applicable -->
+                    <p><b>DISCOUNT APPLICABLE:</b> One Shot Payment: Rs. 1,25,000/-</p>
+                </div>
+                <div id="modeOfPayment" class="hidden mt-4">
+                    <!-- Mode of Payment Details -->
+                    <p>All payment must be done through Online Payment on our website, Online transfer i.e. UPI, NEFT or IMPS, Paytm, Cheque or Demand Draft Only.   No Cash will be accepted under any Circumstances.</p>
+                </div>
+                <div id="packageValidity" class="hidden mt-4">
+                    <!-- Package Validity and Additional Discount Details -->
+                    <p><b>Package Validity:</b></p>
+
+                        <p> Till you get an MBBS Seat or Carry Forward each year till you get an MBBS Seat on same Service Charges. Kindly Note we Increase Our Service charges by 20-25% each year.</p>
+                        
+                            <p><b> ADDITIONAL DISCOUNT’s (If Applicable):</b></p>
+                        
+                                <p> 1. 33% Flat Off for the Children’s of Defence Personnel (Valid ID Must be Produced to Claim the Benefit).*</p>
+                        
+                                    <p>  2. 50% Flat Off for candidates Opting for Govt. Only Counselling.*</p>
+                </div>
+                <div id="refund" class="hidden mt-4">
+                    <!-- Refund Details -->
+                    <p><b>REFUND Policy: </b>If the student fails to get a seat throughout all Counselling, they may carry forward services for Next year(s) till they get a seat or they can claim the 100% refund.</p>
+                </div>
+            </div>
+            <hr class="my-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-lg font-semibold text-green-600">₹ 1,50,000* / Inclusive of GST</p>
+                    <p class="text-sm text-gray-600">* Terms and conditions apply</p>
+                </div>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">BOOK NOW!</button>
+            </div>
+        </div>
+        
+        <script>
+            function toggleDetails(id) {
+                var element = document.getElementById(id);
+                if (element.style.display === "none" || element.style.display === "") {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+            }
+        </script>
+        
+        
+                <br><br>
+                <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white py-4 px-6">
+                        <h2 class="text-2xl font-semibold">Package 2. MBBS NRI/ManagementCounselling Package</h2>
+                        <p class="text-sm italic"> (Negotiated Fees)*</p>
+                    </div>
+                    <div class="p-6">
+                        <!-- Description -->
+                        <p class="text-gray-700">We Provide Best Planning, Documentation Support and Technical Support for NRI/Sponsored candidates. There are many colleges having Huge Tuitions fees across India. In situation if team Om Educare help students to get admission on Negotiated fees or if the candidate obtains a seat in College Level Mop-Up Round then automatically candidate’s Premium service package will be upgraded to Package 2.</p>
+                        <hr class="my-6">
+                                <ul class="divide-y divide-gray-200">
+                                    <li class="py-2 flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M19.707 5.293a1 1 0 00-1.414 0L8 15.586l-4.293-4.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="font-semibold">24x7 Alert for Counselling & Admission related Dates and instructions.</span> Candidate will be informed via SMS, WhatsApp, Voice call, E-mails & one to one Call.
+                                    </li>
+                                    <li class="py-2 flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                            <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                    </li>
+                                    <li class="py-2 flex items-center">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                         <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                     </svg>
+                                     <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                 </li><li class="py-2 flex items-center">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                         <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                     </svg>
+                                     <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                 </li><li class="py-2 flex items-center">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                         <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                     </svg>
+                                     <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                 </li><li class="py-2 flex items-center">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                         <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                     </svg>
+                                     <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                 </li><li class="py-2 flex items-center">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                         <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                     </svg>
+                                     <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                 </li>
+                                </ul>
+                        <!-- Clickable Sections -->
+                        <hr class="my-6">
+                        <div class="flex flex-wrap justify-center sm:justify-between">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('packageCost')">Package Cost</button>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('modeOfPayment')">Mode of Payment</button>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('packageValidity')">Package Validity and Additional Discount</button>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('refund')">Refund</button>
+                        </div>
+                        
+                        <!-- Details Sections -->
+                        <div id="packageCost" class="hidden mt-4">
+                            <!-- Package Cost Details -->
+                            <p><b>1. Package Cost (Before Neet Exam 2024)</b></p>
+                            <p>Rs. 1,75,000/– Rs. 1,50,000/- (Inclusive of 18% GST)</p>
+                            <!-- Payment Options -->
+                            <p><b>Payment Options:</b></p>
+                            <ul>
+                                <li>Installment-1: Rs. 75,000/- At the Time of Booking</li>
+                                <li>Installment-2: Rs. 75,000/- Just after Neet Exam</li>
+                            </ul>
+                            <!-- Discount Applicable -->
+                            <p><b>DISCOUNT APPLICABLE:</b> One Shot Payment: Rs. 1,25,000/-</p>
+                        </div>
+                        <div id="modeOfPayment" class="hidden mt-4">
+                            <!-- Mode of Payment Details -->
+                            <p>All payment must be done through Online Payment on our website, Online transfer i.e. UPI, NEFT or IMPS, Paytm, Cheque or Demand Draft Only.   No Cash will be accepted under any Circumstances.</p>
+                        </div>
+                        <div id="packageValidity" class="hidden mt-4">
+                            <!-- Package Validity and Additional Discount Details -->
+                            <p><b>Package Validity:</b></p>
+        
+                                <p> Till you get an MBBS Seat or Carry Forward each year till you get an MBBS Seat on same Service Charges. Kindly Note we Increase Our Service charges by 20-25% each year.</p>
+                                
+                                    <p><b> ADDITIONAL DISCOUNT’s (If Applicable):</b></p>
+                                
+                                        <p> 1. 33% Flat Off for the Children’s of Defence Personnel (Valid ID Must be Produced to Claim the Benefit).*</p>
+                                
+                                            <p>  2. 50% Flat Off for candidates Opting for Govt. Only Counselling.*</p>
+                        </div>
+                        <div id="refund" class="hidden mt-4">
+                            <!-- Refund Details -->
+                            <p><b>REFUND Policy: </b>If the student fails to get a seat throughout all Counselling, they may carry forward services for Next year(s) till they get a seat or they can claim the 100% refund.</p>
+                        </div>
+                    </div>
+                    <hr class="my-6">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-lg font-semibold text-green-600">₹ 1,50,000* / Inclusive of GST</p>
+                            <p class="text-sm text-gray-600">* Terms and conditions apply</p>
+                        </div>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">BOOK NOW!</button>
+                    </div>
+                </div>
+
+                     <br><br>
+                     <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white py-4 px-6">
+                            <h2 class="text-2xl font-semibold">Package 3. BDS/BAMS/Nursing/Pharmacy/BVSC&AH & Other Medical Courses Guidance Package</h2>
+                            <p class="text-sm italic">(100% Refundable)*</p>
+                        </div>
+                        <div class="p-6">
+                            <!-- Description -->
+                            <p class="text-gray-700">Enhance your chances of admission to maximize with our premium package. Get the benefit of Alert package and Counselling Package along with some exclusive college guidance that will fit your budget. Submit candidate details and choice of colleges to us and stay tension free. A well trained experienced Professional team will take care of everything from the registration of counselling to Choose filling & locking. Everything will be done by the senior team of OM EDUCARE. Also, at the time of Mop-Up round, you will be informed at high priority about vacant seats so that you stand with maximum chances to get admission in the Final round.</p>
+                            <hr class="my-6">
+                                    <ul class="divide-y divide-gray-200">
+                                        <li class="py-2 flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M19.707 5.293a1 1 0 00-1.414 0L8 15.586l-4.293-4.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="font-semibold">24x7 Alert for Counselling & Admission related Dates and instructions.</span> Candidate will be informed via SMS, WhatsApp, Voice call, E-mails & one to one Call.
+                                        </li>
+                                        <li class="py-2 flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                                <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                        </li>
+                                        <li class="py-2 flex items-center">
+                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                             <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                         </svg>
+                                         <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                     </li><li class="py-2 flex items-center">
+                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                             <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                         </svg>
+                                         <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                     </li><li class="py-2 flex items-center">
+                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                             <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                         </svg>
+                                         <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                     </li><li class="py-2 flex items-center">
+                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                             <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                         </svg>
+                                         <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                     </li><li class="py-2 flex items-center">
+                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                                             <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-10a1 1 0 11-1 1 1 1 0 011-1zM9 11a1 1 0 012 0v3a1 1 0 11-2 0v-3zm1-6a1 1 0 110 2 1 1 0 010-2z" clip-rule="evenodd" />
+                                         </svg>
+                                         <span class="font-semibold">Regular Updates on NMC Circulars and NTA NEET Notices.</span>
+                                     </li>
+                                    </ul>
+                            <!-- Clickable Sections -->
+                            <hr class="my-6">
+                            <div class="flex flex-wrap justify-center sm:justify-between">
+                                <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('packageCost')">Package Cost</button>
+                                <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('modeOfPayment')">Mode of Payment</button>
+                                <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('packageValidity')">Package Validity and Additional Discount</button>
+                                <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-2" onclick="toggleDetails('refund')">Refund</button>
+                            </div>
+                            
+                            <!-- Details Sections -->
+                            <div id="packageCost" class="hidden mt-4">
+                                <!-- Package Cost Details -->
+                                <p><b>1. Package Cost (Before Neet Exam 2024)</b></p>
+                                <p>Rs. 1,75,000/– Rs. 1,50,000/- (Inclusive of 18% GST)</p>
+                                <!-- Payment Options -->
+                                <p><b>Payment Options:</b></p>
+                                <ul>
+                                    <li>Installment-1: Rs. 75,000/- At the Time of Booking</li>
+                                    <li>Installment-2: Rs. 75,000/- Just after Neet Exam</li>
+                                </ul>
+                                <!-- Discount Applicable -->
+                                <p><b>DISCOUNT APPLICABLE:</b> One Shot Payment: Rs. 1,25,000/-</p>
+                            </div>
+                            <div id="modeOfPayment" class="hidden mt-4">
+                                <!-- Mode of Payment Details -->
+                                <p>All payment must be done through Online Payment on our website, Online transfer i.e. UPI, NEFT or IMPS, Paytm, Cheque or Demand Draft Only.   No Cash will be accepted under any Circumstances.</p>
+                            </div>
+                            <div id="packageValidity" class="hidden mt-4">
+                                <!-- Package Validity and Additional Discount Details -->
+                                <p><b>Package Validity:</b></p>
+            
+                                    <p> Till you get an MBBS Seat or Carry Forward each year till you get an MBBS Seat on same Service Charges. Kindly Note we Increase Our Service charges by 20-25% each year.</p>
+                                    
+                                        <p><b> ADDITIONAL DISCOUNT’s (If Applicable):</b></p>
+                                    
+                                            <p> 1. 33% Flat Off for the Children’s of Defence Personnel (Valid ID Must be Produced to Claim the Benefit).*</p>
+                                    
+                                                <p>  2. 50% Flat Off for candidates Opting for Govt. Only Counselling.*</p>
+                            </div>
+                            <div id="refund" class="hidden mt-4">
+                                <!-- Refund Details -->
+                                <p><b>REFUND Policy: </b>If the student fails to get a seat throughout all Counselling, they may carry forward services for Next year(s) till they get a seat or they can claim the 100% refund.</p>
+                            </div>
+                        </div>
+                        <hr class="my-6">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-lg font-semibold text-green-600">₹ 1,50,000* / Inclusive of GST</p>
+                                <p class="text-sm text-gray-600">* Terms and conditions apply</p>
+                            </div>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">BOOK NOW!</button>
+                        </div>
+                    </div>
+       </div>
+   </body>
+   
+   </html>
+   

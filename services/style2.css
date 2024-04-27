@@ -1,0 +1,283 @@
+.lecture {
+    padding: 0;
+    margin: auto;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  #higlight {
+    color: #696bf0;
+  }
+  
+  .live {
+    padding: 0;
+    margin: auto;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .star {
+    content: url(psychologist-woman-man-patient-psychology-therapy-session-treatment-stress-addictions-mental-problems-psychotherapy-practice-psychological-help-ps.avif);
+    padding: 0;
+    margin: auto;
+    border-radius: 1000px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .star img {
+    width: 80px;
+    align-content: center;
+  }
+  
+  .star1 {
+    content: url(college-fairs-isolated-cartoon-vector-illustrations-college-fairs-isolated-cartoon-vector-illustrations-school-graduate-visits-253849895.webp);
+    padding: 0;
+    margin: auto;
+    border-radius: 1000px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .star1 img {
+    width: 80px;
+    align-content: center;
+  }
+  
+  .star2 {
+    content: url(4268802.webp);
+    padding: 0;
+    margin: auto;
+    border-radius: 1000px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .star2 img {
+    width: 80px;
+    align-content: center;
+  }
+  
+  .star3 {
+    content: url(analyze-growth-graph-5015633-4185580.webp);
+    padding: 0;
+    margin: auto;
+    border-radius: 1000px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .star3 img {
+    width: 80px;
+    align-content: center;
+  }
+  
+  .star4 {
+    content: url(online-therapy-session-with-psychologist_107791-10605.avif);
+    padding: 0;
+    margin: auto;
+    border-radius: 1000px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .star4 img {
+    width: 80px;
+    align-content: center;
+  }
+  
+  .star5 {
+    content: url(istockphoto-485647678-612x612.jpg);
+    padding: 0;
+    margin: auto;
+    border-radius: 1000px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .star5 img {
+    width: 80px;
+    align-content: center;
+  }
+  
+  #box3 {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #F9EE93;
+  }
+  
+  #box1 {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #69B4F0;
+  }
+  
+  #box2 {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #DABABA;
+  }
+  /*  */
+  #box3a {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #F9EE93;
+  }
+  
+  #box1a {
+    margin-left: 60px;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #69B4F0;
+  }
+  
+  #box2a {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #DABABA;
+  }
+  /* Copy */
+  #box3x {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #F9EE93;
+  }
+  
+  #box1x {
+    margin-left: 60px;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #69B4F0;
+  }
+  
+  #box2x {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #DABABA;
+  }
+  /* Copy */
+  
+  #box1n {
+    border-style: solid;
+    border-width: 0px;
+    margin-left: 60px;
+    border-bottom-width: 5px;
+    border-color: #737DB3;
+  }
+  
+  #box2n {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #FDDCDF;
+  }
+  
+  #box3n {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-color: #C590CE;
+  }
+  
+  h2.heading1 {
+    color: #696bf0;
+  }/*# sourceMappingURL=Ccstyle.css.map */
+  h2.heading2 {
+    color: #e9e9fd;
+  }
+  .footer
+  {
+    border-radius: 50px 50px 0px 0px;
+    width: 100vw;
+    height: 120vh;
+    background-color: #645868;
+    display: flex;
+
+  }
+  .logoone .menu2 .noticeinfo{
+    height: 100%;
+    width: 20%;
+    color: white;
+    width: 100%;
+    background-color: #737DB3;
+  }
+  .menu2{
+    width: 33%;
+  }
+  .menu2 a{
+    font-weight: 500;
+    color: white;
+  }
+  .logoone img{
+    height: 200px;
+    width: 200px;
+  }
+.round{
+    height: 25px;
+    border-radius: 10px;
+}
+.socialmedia h4{
+    color: #f9ef93f1;
+}
+.socialmedia{
+    display: grid;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    /* background-color: #DABABA; */
+    justify-content: center;
+
+}
+.con{
+    display: flex;
+    justify-content: center;
+}
+.socialmedia h1{
+    font-size: 20px;
+    font-style: normal;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    margin-top: -0.01px;
+    margin-left: 10px;
+}
+.logoone{
+    display: grid;
+    justify-content: center;
+    /* background-color: red; */
+    align-content: center;
+    width: 33%;
+}
+.log{
+    display: grid;
+    justify-content: center;
+    /* background-color: red; */
+    align-content: center;
+    width: 100%;
+}.noticeinfo marquee{
+    height: 200px;
+    padding: 20px;
+    /* background-color: #F9EE93; */
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+.linkk a{
+    font-size: 20px;
+}
